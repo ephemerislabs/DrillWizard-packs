@@ -1,12 +1,12 @@
 {
  "schema_version": 3,
- "generated": "2026-07-30",
+ "generated": "2026-08-28",
  "note": "Drill Wizard rate packs. Served to the app at DATA_PACK_URL. See README.md.",
  "packs": [
   {
    "pack_id": "2026",
    "schema_version": 3,
-   "generated": "2026-07-30",
+   "generated": "2026-08-28",
    "effective": {
     "military_pay_start": "2026-01-01",
     "va_comp_start": "2025-12-01"
@@ -1011,26 +1011,26 @@
     },
     {
      "id": "hdip_crew",
-     "label": "HDIP — flying, aircrew (non-AvIP)",
+     "label": "HDIP \u2014 flying, aircrew (non-AvIP)",
      "def": null,
-     "hint": "Up to $250/mo by grade — enter your LES amount"
+     "hint": "Up to $250/mo by grade \u2014 enter your LES amount"
     },
     {
      "id": "hdip_noncrew",
-     "label": "HDIP — flying, non-crewmember",
+     "label": "HDIP \u2014 flying, non-crewmember",
      "def": 150
     },
     {
      "id": "para",
      "label": "Parachute duty (static line)",
      "def": 150,
-     "hint": "Army rate temporarily higher through 2029 — verify on LES"
+     "hint": "Army rate temporarily higher through 2029 \u2014 verify on LES"
     },
     {
      "id": "halo",
      "label": "Parachute duty (MFF / HALO)",
      "def": 225,
-     "hint": "Recent NDAA raised some MFF rates — verify on LES"
+     "hint": "Recent NDAA raised some MFF rates \u2014 verify on LES"
     },
     {
      "id": "demo",
@@ -1046,37 +1046,37 @@
      "id": "dive",
      "label": "Diving duty",
      "def": null,
-     "hint": "Up to $240 officer / $340 enlisted — enter your LES amount"
+     "hint": "Up to $240 officer / $340 enlisted \u2014 enter your LES amount"
     },
     {
      "id": "sub",
      "label": "Submarine duty",
      "def": null,
-     "hint": "By grade and YOS — enter your LES amount"
+     "hint": "By grade and YOS \u2014 enter your LES amount"
     },
     {
      "id": "seapay",
      "label": "Career sea pay",
      "def": null,
-     "hint": "By grade and cumulative sea years — roughly $60–$805/mo, tables vary by service. Enter your LES amount"
+     "hint": "By grade and cumulative sea years \u2014 roughly $60\u2013$805/mo, tables vary by service. Enter your LES amount"
     },
     {
      "id": "seaprem",
      "label": "Career sea pay premium",
      "def": 200,
-     "hint": "After 36 consecutive months of sea duty. Officers O1–O6 draw $100 — edit the amount"
+     "hint": "After 36 consecutive months of sea duty. Officers O1\u2013O6 draw $100 \u2014 edit the amount"
     },
     {
      "id": "flpb",
      "label": "Foreign language proficiency",
      "def": null,
-     "hint": "By language/level — enter your LES amount"
+     "hint": "By language/level \u2014 enter your LES amount"
     },
     {
      "id": "sdap",
      "label": "Special duty assignment pay",
      "def": null,
-     "hint": "SD-1 to SD-6 — enter your LES amount"
+     "hint": "SD-1 to SD-6 \u2014 enter your LES amount"
     },
     {
      "id": "custom",
@@ -1218,6 +1218,27 @@
     ],
     "as_of": "2026",
     "src": "IRC 402(g)/415(c); IRS Notice 2025-67, TSP Bulletin 25-3; SECURE 2.0 s603"
+   },
+   "tsp_prices": {
+    "as_of": "2026-08-27",
+    "px": {
+     "LI": 31.1547,
+     "L30": 64.0211,
+     "L35": 19.7433,
+     "L40": 76.2261,
+     "L45": 21.2176,
+     "L50": 47.29,
+     "L55": 24.9374,
+     "L60": 24.9341,
+     "L65": 24.9308,
+     "L70": 14.7758,
+     "L75": 12.9067,
+     "G": 20.1638,
+     "F": 20.936,
+     "C": 124.5984,
+     "S": 118.6273,
+     "I": 66.4571
+    }
    }
   }
  ]
