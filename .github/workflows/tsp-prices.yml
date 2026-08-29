@@ -1,8 +1,11 @@
 # Drill Wizard — daily TSP share prices into latest.json
 # Lives at .github/workflows/tsp-prices.yml in the DrillWizard-packs repo.
 # Runs weekday evenings after tsp.gov posts the day's prices, plus a manual
-# Run-workflow button for the first run and for catch-ups. The updater is
-# fail-closed: a broken feed fails this job loudly and commits nothing.
+# Run-workflow button. The updater is fail-closed: a broken feed fails this
+# job loudly and commits nothing.
+# v2 of the commit step: two runs can race (cron vs retry vs manual) and the
+# push loser used to go red for no real reason — now it rebases onto whatever
+# won and retries, keeping its own freshly-fetched file content.
 
 name: TSP share prices
 
@@ -37,4 +40,14 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add latest.json
           git commit -m "TSP prices $(date -u +%F)"
+          # Two runs can race for the one push slot. Rebase our commit onto
+          # whatever won and push again. NOTE the rebase inversion: during a
+          # rebase, "-X theirs" keeps THIS run's file content — which is the
+          # freshest fetch — and an identical already-pushed change simply
+          # drops our commit, making the push a clean no-op.
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push rejected — rebasing onto the winner (attempt $i)"
+            git pull --rebase -X theirs origin main
+          done
           git push
