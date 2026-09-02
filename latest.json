@@ -1011,26 +1011,26 @@
     },
     {
      "id": "hdip_crew",
-     "label": "HDIP — flying, aircrew (non-AvIP)",
+     "label": "HDIP \u2014 flying, aircrew (non-AvIP)",
      "def": null,
-     "hint": "Up to $250/mo by grade — enter your LES amount"
+     "hint": "Up to $250/mo by grade \u2014 enter your LES amount"
     },
     {
      "id": "hdip_noncrew",
-     "label": "HDIP — flying, non-crewmember",
+     "label": "HDIP \u2014 flying, non-crewmember",
      "def": 150
     },
     {
      "id": "para",
      "label": "Parachute duty (static line)",
      "def": 150,
-     "hint": "Army rate temporarily higher through 2029 — verify on LES"
+     "hint": "Army rate temporarily higher through 2029 \u2014 verify on LES"
     },
     {
      "id": "halo",
      "label": "Parachute duty (MFF / HALO)",
      "def": 225,
-     "hint": "Recent NDAA raised some MFF rates — verify on LES"
+     "hint": "Recent NDAA raised some MFF rates \u2014 verify on LES"
     },
     {
      "id": "demo",
@@ -1046,37 +1046,37 @@
      "id": "dive",
      "label": "Diving duty",
      "def": null,
-     "hint": "Up to $240 officer / $340 enlisted — enter your LES amount"
+     "hint": "Up to $240 officer / $340 enlisted \u2014 enter your LES amount"
     },
     {
      "id": "sub",
      "label": "Submarine duty",
      "def": null,
-     "hint": "By grade and YOS — enter your LES amount"
+     "hint": "By grade and YOS \u2014 enter your LES amount"
     },
     {
      "id": "seapay",
      "label": "Career sea pay",
      "def": null,
-     "hint": "By grade and cumulative sea years — roughly $60–$805/mo, tables vary by service. Enter your LES amount"
+     "hint": "By grade and cumulative sea years \u2014 roughly $60\u2013$805/mo, tables vary by service. Enter your LES amount"
     },
     {
      "id": "seaprem",
      "label": "Career sea pay premium",
      "def": 200,
-     "hint": "After 36 consecutive months of sea duty. Officers O1–O6 draw $100 — edit the amount"
+     "hint": "After 36 consecutive months of sea duty. Officers O1\u2013O6 draw $100 \u2014 edit the amount"
     },
     {
      "id": "flpb",
      "label": "Foreign language proficiency",
      "def": null,
-     "hint": "By language/level — enter your LES amount"
+     "hint": "By language/level \u2014 enter your LES amount"
     },
     {
      "id": "sdap",
      "label": "Special duty assignment pay",
      "def": null,
-     "hint": "SD-1 to SD-6 — enter your LES amount"
+     "hint": "SD-1 to SD-6 \u2014 enter your LES amount"
     },
     {
      "id": "custom",
@@ -1220,24 +1220,24 @@
     "src": "IRC 402(g)/415(c); IRS Notice 2025-67, TSP Bulletin 25-3; SECURE 2.0 s603"
    },
    "tsp_prices": {
-    "as_of": "2026-08-31",
+    "as_of": "2026-09-01",
     "px": {
-     "LI": 31.0984,
-     "L30": 63.7801,
-     "L35": 19.651,
-     "L40": 75.8349,
-     "L45": 21.1005,
-     "L50": 47.0118,
-     "L55": 24.7662,
-     "L60": 24.763,
-     "L65": 24.7596,
-     "L70": 14.6743,
-     "L75": 12.818,
-     "G": 20.1747,
-     "F": 20.8475,
-     "C": 123.8857,
-     "S": 116.5737,
-     "I": 66.1362
+     "LI": 31.0303,
+     "L30": 63.5113,
+     "L35": 19.5497,
+     "L40": 75.4087,
+     "L45": 20.9736,
+     "L50": 46.7109,
+     "L55": 24.579,
+     "L60": 24.5757,
+     "L65": 24.5723,
+     "L70": 14.5633,
+     "L75": 12.721,
+     "G": 20.1774,
+     "F": 20.7913,
+     "C": 123.016,
+     "S": 114.9163,
+     "I": 65.7339
     }
    },
    "oconus_mie": {
