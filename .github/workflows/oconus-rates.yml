@@ -1,0 +1,73 @@
+# .github/workflows/oconus-rates.yml — for the ephemerislabs/DrillWizard-packs repo
+#
+# Once a month, the day after DTMO's first-of-the-month publication, fetch the current OCONUS per
+# diem table and write it into latest.json as the `oconus_mie` block. The app (1.0.0+) reads it
+# through ocTable() and prefers it whenever it is well-formed and at least as new as the table
+# compiled into the binary.
+#
+# FAIL-CLOSED, like the TSP price workflow beside it. Any parse anomaly exits non-zero and commits
+# nothing; the app keeps the last good table and its rates clock says so. A red run is the signal —
+# read the "Fetch and parse" step log, not the banner.
+#
+# Files this expects in the repo:
+#   scripts/oconus_rates.py   (the parser; run `python3 scripts/oconus_rates.py --self-test` any time)
+#   latest.json               (the pack the app fetches; the TSP workflow writes to it too)
+
+name: oconus-rates
+
+on:
+  schedule:
+    - cron: "0 12 2 * *"        # 12:00 UTC on the 2nd of every month — DTMO posts on the 1st
+  workflow_dispatch:            # and by hand, any time: Actions → oconus-rates → Run workflow
+
+permissions:
+  contents: write
+
+concurrency:
+  group: latest-json            # never write latest.json at the same moment as tsp-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the PDF reader
+        run: pip install --quiet pdfplumber
+
+      - name: Self-test the parser against real rows
+        run: python3 scripts/oconus_rates.py --self-test
+
+      - name: Download DTMO's current OCONUS table
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 --retry-delay 20 \
+            -A "DrillWizard-packs (ephemerislabs.app; support@ephemerislabs.app)" \
+            -o Current_OCONUS_Rates.pdf \
+            "https://www.travel.dod.mil/Portals/119/Documents/Allowances/Per_Diem/OCONUS/Current_OCONUS_Rates.pdf"
+          file Current_OCONUS_Rates.pdf | grep -q "PDF document" || { echo "not a PDF"; exit 1; }
+          ls -la Current_OCONUS_Rates.pdf
+
+      - name: Fetch and parse
+        run: python3 scripts/oconus_rates.py Current_OCONUS_Rates.pdf latest.json
+
+      - name: Commit if the table moved
+        run: |
+          set -euo pipefail
+          if [ "$(cat oconus_result.txt)" != "changed" ]; then
+            echo "latest.json already carries this month's table — nothing to commit"
+            exit 0
+          fi
+          git config user.name  "drill-wizard-packs[bot]"
+          git config user.email "support@ephemerislabs.app"
+          git add latest.json
+          git commit -m "OCONUS per diem: $(python3 -c 'import json;print(json.load(open("latest.json"))["packs"][0]["oconus_mie"]["as_of"])')"
+          # the TSP workflow may have pushed since checkout; rebase rather than fail
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "pushed"
