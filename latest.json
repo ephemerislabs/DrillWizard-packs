@@ -1011,26 +1011,26 @@
     },
     {
      "id": "hdip_crew",
-     "label": "HDIP \u2014 flying, aircrew (non-AvIP)",
+     "label": "HDIP — flying, aircrew (non-AvIP)",
      "def": null,
-     "hint": "Up to $250/mo by grade \u2014 enter your LES amount"
+     "hint": "Up to $250/mo by grade — enter your LES amount"
     },
     {
      "id": "hdip_noncrew",
-     "label": "HDIP \u2014 flying, non-crewmember",
+     "label": "HDIP — flying, non-crewmember",
      "def": 150
     },
     {
      "id": "para",
      "label": "Parachute duty (static line)",
      "def": 150,
-     "hint": "Army rate temporarily higher through 2029 \u2014 verify on LES"
+     "hint": "Army rate temporarily higher through 2029 — verify on LES"
     },
     {
      "id": "halo",
      "label": "Parachute duty (MFF / HALO)",
      "def": 225,
-     "hint": "Recent NDAA raised some MFF rates \u2014 verify on LES"
+     "hint": "Recent NDAA raised some MFF rates — verify on LES"
     },
     {
      "id": "demo",
@@ -1046,37 +1046,37 @@
      "id": "dive",
      "label": "Diving duty",
      "def": null,
-     "hint": "Up to $240 officer / $340 enlisted \u2014 enter your LES amount"
+     "hint": "Up to $240 officer / $340 enlisted — enter your LES amount"
     },
     {
      "id": "sub",
      "label": "Submarine duty",
      "def": null,
-     "hint": "By grade and YOS \u2014 enter your LES amount"
+     "hint": "By grade and YOS — enter your LES amount"
     },
     {
      "id": "seapay",
      "label": "Career sea pay",
      "def": null,
-     "hint": "By grade and cumulative sea years \u2014 roughly $60\u2013$805/mo, tables vary by service. Enter your LES amount"
+     "hint": "By grade and cumulative sea years — roughly $60–$805/mo, tables vary by service. Enter your LES amount"
     },
     {
      "id": "seaprem",
      "label": "Career sea pay premium",
      "def": 200,
-     "hint": "After 36 consecutive months of sea duty. Officers O1\u2013O6 draw $100 \u2014 edit the amount"
+     "hint": "After 36 consecutive months of sea duty. Officers O1–O6 draw $100 — edit the amount"
     },
     {
      "id": "flpb",
      "label": "Foreign language proficiency",
      "def": null,
-     "hint": "By language/level \u2014 enter your LES amount"
+     "hint": "By language/level — enter your LES amount"
     },
     {
      "id": "sdap",
      "label": "Special duty assignment pay",
      "def": null,
-     "hint": "SD-1 to SD-6 \u2014 enter your LES amount"
+     "hint": "SD-1 to SD-6 — enter your LES amount"
     },
     {
      "id": "custom",
@@ -1241,8 +1241,8 @@
     }
    },
    "oconus_mie": {
-    "as_of": "2026-09-01",
-    "source": "DTMO OCONUS per diem supplement (travel.dod.mil), eff. 01 Sep 2026",
+    "as_of": "2026-10-01",
+    "source": "DTMO OCONUS per diem supplement (travel.dod.mil), eff. 01 Oct 2026",
     "countries": {
      "AFGHANISTAN": [
       [
@@ -1778,10 +1778,6 @@
        131
       ],
       [
-       "MELBOURNE (INTL EVENTS)",
-       112
-      ],
-      [
        "MELBOURNE",
        112
       ],
@@ -1939,11 +1935,11 @@
      "BELARUS": [
       [
        "MINSK",
-       116
+       113
       ],
       [
        "[OTHER]",
-       116
+       113
       ]
      ],
      "BELGIUM": [
@@ -2064,15 +2060,15 @@
       ],
       [
        "LA PAZ",
-       63
+       61
       ],
       [
        "POTOSI",
-       45
+       43
       ],
       [
        "SANTA CRUZ",
-       62
+       60
       ],
       [
        "TARIJA",
@@ -2080,7 +2076,7 @@
       ],
       [
        "[OTHER]",
-       42
+       41
       ]
      ],
      "BONAIRE, SINT EUSTATIUS, AND SABA": [
@@ -2398,7 +2394,8 @@
       ],
       [
        "KELOWNA",
-       122
+       125,
+       158
       ],
       [
        "LONDON, ONTARIO",
@@ -2485,7 +2482,8 @@
       ],
       [
        "WHISTLER, BC",
-       115
+       140,
+       168
       ],
       [
        "WHITEHORSE, YUKON",
@@ -2610,7 +2608,7 @@
       ],
       [
        "JINAN",
-       117
+       124
       ],
       [
        "LHASA",
@@ -2698,7 +2696,7 @@
      "COLOMBIA": [
       [
        "BARRANQUILLA",
-       137
+       117
       ],
       [
        "BOGOTA",
@@ -2726,7 +2724,7 @@
       ],
       [
        "MEDELLIN",
-       168
+       129
       ],
       [
        "PASTO",
@@ -3357,7 +3355,7 @@
       ],
       [
        "BONAMES",
-       135
+       133
       ],
       [
        "BONN",
@@ -3384,8 +3382,8 @@
        135
       ],
       [
-       "DUESSELDORF",
-       151
+       "Dusseldorf",
+       138
       ],
       [
        "ECHTERDINGEN (STUTTGART ARMY AIRFLD",
@@ -3397,11 +3395,11 @@
       ],
       [
        "ERFURT",
-       151
+       144
       ],
       [
        "ESCHBORN",
-       135
+       133
       ],
       [
        "ESSLINGEN",
@@ -3409,7 +3407,7 @@
       ],
       [
        "FRANKFURT AM MAIN",
-       135
+       133
       ],
       [
        "GARMISCH - US ARMY GARRISON",
@@ -3437,15 +3435,15 @@
       ],
       [
        "HEIDELBERG",
-       151
+       144
       ],
       [
        "HERONGEN",
-       151
+       138
       ],
       [
        "HOECHST",
-       135
+       133
       ],
       [
        "HOHENFELS - US ARMY GARRISON",
@@ -3457,7 +3455,7 @@
       ],
       [
        "KALKAR",
-       151
+       138
       ],
       [
        "KAPAUN AS",
@@ -3509,7 +3507,7 @@
       ],
       [
        "MOENCHEN-GLADBACH",
-       151
+       138
       ],
       [
        "MUNICH",
@@ -3525,7 +3523,7 @@
       ],
       [
        "OFFENBACH",
-       135
+       133
       ],
       [
        "PANZER KASERNE/BOEBLINGEN",
@@ -3553,11 +3551,11 @@
       ],
       [
        "ROEDELHEIM",
-       135
+       133
       ],
       [
        "SCHWETZINGEN MILITARY ACTIVITIES",
-       151
+       144
       ],
       [
        "SEMBACH KASERNE",
@@ -3585,7 +3583,7 @@
       ],
       [
        "TWISTEDEN",
-       151
+       138
       ],
       [
        "VAIHINGEN/STUTTGART",
@@ -3956,15 +3954,15 @@
      "HUNGARY": [
       [
        "BUDAPEST",
-       95
+       108
       ],
       [
        "PAPA",
-       80
+       72
       ],
       [
        "[OTHER]",
-       80
+       72
       ]
      ],
      "ICELAND": [
@@ -4773,11 +4771,11 @@
       ],
       [
        "ALMATY",
-       129
+       135
       ],
       [
        "ASTANA",
-       117
+       120
       ],
       [
        "[OTHER]",
@@ -4871,157 +4869,157 @@
      "KOREA, SOUTH": [
       [
        "BUSAN",
-       120
+       126
       ],
       [
        "CAMP CARROLL",
-       106
+       112
       ],
       [
        "CAMP CASEY",
-       41
+       44
       ],
       [
        "CAMP HENRY & WALKER",
-       106
+       112
       ],
       [
        "CAMP HUMPHREYS",
-       51
+       54
       ],
       [
        "CAMP MARKET",
-       126
+       132
       ],
       [
        "CAMP MUJUK",
-       100,
-       117
+       107,
+       124
       ],
       [
        "CAMP RED CLOUD",
-       41
+       44
       ],
       [
        "CAMP STANLEY",
-       41
+       44
       ],
       [
        "CHANGWON",
-       57
-      ],
-      [
-       "CHEJU",
-       90
-      ],
-      [
-       "CHINJU",
-       56
-      ],
-      [
-       "CHONGJU",
-       43
-      ],
-      [
-       "CHONJU",
        60
       ],
       [
+       "CHEJU",
+       93
+      ],
+      [
+       "CHINJU",
+       58
+      ],
+      [
+       "CHONGJU",
+       46
+      ],
+      [
+       "CHONJU",
+       63
+      ],
+      [
        "CHUNG JU",
-       49
+       51
       ],
       [
        "FLEET ACTIVITIES CHINHAE",
-       57
+       60
       ],
       [
        "GYEONGJU",
-       100,
-       117
+       107,
+       124
       ],
       [
        "INCHEON",
-       117
+       123
       ],
       [
        "K-16",
-       126
+       132
       ],
       [
        "KIMHAE",
-       56
+       59
       ],
       [
        "KIMPO AIRFIELD",
-       126
+       132
       ],
       [
        "KUMI",
-       63
+       66
       ],
       [
        "KUNSAN AB",
-       51
+       54
       ],
       [
        "KWANGJU",
-       113
+       119
       ],
       [
        "MASAN",
-       61
+       65
       ],
       [
        "MERCER & COLBERN",
-       126
+       132
       ],
       [
        "OSAN AB",
-       41
+       44
       ],
       [
        "PYEONGCHANG",
-       75
+       73
       ],
       [
        "PYEONGTAEK",
-       51
+       54
       ],
       [
        "SEOUL",
-       126
+       132
       ],
       [
        "SOKCHO",
-       71
+       75
       ],
       [
        "SUWON AB",
-       126
+       132
       ],
       [
        "TAEGU",
-       106
+       112
       ],
       [
        "TAEJON",
-       63
+       66
       ],
       [
        "UIJONGBU",
-       41
+       44
       ],
       [
        "ULSAN",
-       81
+       86
       ],
       [
        "YONGSAN US ARMY GARRISON",
-       126
+       132
       ],
       [
        "[OTHER]",
-       41
+       44
       ]
      ],
      "KOSOVO": [
@@ -5861,7 +5859,7 @@
      ],
      "NEW CALEDONIA": [
       [
-       "NEW CALEDONIA",
+       "NOUMEA",
        97
       ]
      ],
@@ -6940,7 +6938,7 @@
       ],
       [
        "DAMASCUS",
-       92
+       86
       ],
       [
        "[OTHER] (USG FACILITIES)",
@@ -6948,7 +6946,7 @@
       ],
       [
        "[OTHER]",
-       92
+       86
       ]
      ],
      "TAIWAN": [
@@ -7186,7 +7184,7 @@
      "TURKEY": [
       [
        "ADANA-INCIRLIK",
-       81
+       79
       ],
       [
        "ANKARA",
@@ -7206,7 +7204,7 @@
       ],
       [
        "INCIRLIK AIR BASE",
-       81
+       79
       ],
       [
        "ISTANBUL",
@@ -7807,7 +7805,8 @@
       ],
       [
        "MFUWE",
-       101
+       96,
+       102
       ],
       [
        "NDOLA",
